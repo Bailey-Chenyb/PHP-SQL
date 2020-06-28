@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 15px;
+}
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+header {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: #c3c3c3;
+}
+
+section {
+    width: 100%;
+    height:fit-content;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.map-container {
+    width: 60%;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+}
+h1 {
+    font-size: 30px;
+    font-weight: 350;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+p {
+    margin-bottom: 10px;
+}
+#map {
+    width: 100%;
+    height: 60vh;
+}
+.options {
+    width: 35%;
+    height: 86%;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+}
+h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.filter-one,
+.filter-two {
+    margin-bottom: 30px;
+}
+.filter-one span,
+.filter-two span {
+    display: block;
+    margin-bottom: 20px;
+}
+.form {
+    width: 80%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.form input {
+    border: 1px solid #000;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px #cccccc;
+    border-radius: 3px;
+    padding: 2px 5px;
+    font-size: 10px;
+    background-color: #f4f4f4;
+}
