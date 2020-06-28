@@ -75,10 +75,10 @@ Applying the query $sqlQuery to the database connected through $db, and displayi
 
 ## References:
 
-
 Lamb, T. (2015). Towards a plurilingual habitus: engendering interlinguality in urban spaces, International Journal of Pedagogies and Learning, 10(20), 151-165, DOI: 10.1080/22040552.2015.1113848 
  
 London DataStore. (2011). Languages Spoken by Pupils, Borough & MSOA. https://data.london.gov.uk/dataset/languages-spoken-pupils-borough-msoa 
- 
+
 The British Academy. (2012). Multilingual Britain. Retrieved 29 April 2020, from: https://www.thebritishacademy.ac.uk/sites/default/files/Multilingual%20Britain%20Report.pdf 
- 
+
+
