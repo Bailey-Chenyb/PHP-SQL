@@ -25,10 +25,10 @@ This language map should be helpful for them to develop a general idea of langua
 Although an interactive map is already provided on the same webpage of the dataset (London Datastore, 2011), the map is complex and poorly explained. For example, a text box with information “Ealing 021: 5 - High” appears when the mouse hovering Ealing, but surrounding displays do not provide explicit context for understanding the information. Additionally, the upper area box on the right side of webpage contains a lengthy list, which requires users to spend considerable time to scroll down and locate a specific area. On the right corner of the page, a graph with language data could be displayed. But it requires users to make several clicks to activate it. The current project aims to address these problems. More specifically, the current map provides more explicit information of language usage in each district with pop-up text in obvious markers. Secondly, language drop-down menu is adjusted by corresponding geozone data, so that a shorter list is presented, and less scroll is needed. Third, a table with language data in one specific area can be easily and intuitively activated with only one selecting action.  
 
 #### Design:
-1.Data design:  
+1. Data design:  
 Because the original file contains only the name of districts, geocoding is needed. The website for collecting coordinates is:  https://getlatlong.net/. Manually adding coordinates to locations is not efficient for large volumes of data, however, the locations covered by the original file are 36 districts in London, which is still manageable to do it manually. Additionally, when searching coordinates for these districts, the keyword "London" was constantly added in search box after the district name for higher accuracy. Because every address name could be used in other countries. For example, when searching the coordination of Barnet, "Barnet London” was entered in search box. Additionally, explanation for the first row of the original dataset (e.g. 00AC, 00AH) is not explicitly provided by London DataStore, the first row is therefore excluded from the project. Moreover, in order to make the data clearer and more manageable, the original data file is re-arranged and divided into two CSV files. These CSV files illustrate how process and my logic were, and they are for reference only. The public.sql is the one that imported into PostgreSQL. 
 
-2.Filter design: 
+2. Filter design: 
 Since the transformed dataset contains three dimensions: language usage, geozones and 36 areas, creating filters with different themes is feasible. The Language-oriented search is associated with data of language distribution and geozone, while District-oriented search is associated with districts and corresponding language data. This design allows users to make fully use of the identified dimensions. 
 
 #### Implementation:
@@ -75,10 +75,10 @@ Applying the query $sqlQuery to the database connected through $db, and displayi
 
 ## References:
 
-Lamb, T. (2015). Towards a plurilingual habitus: engendering interlinguality in urban spaces, International Journal of Pedagogies and Learning, 10(20), 151-165, DOI: 10.1080/22040552.2015.1113848 
+1. Lamb, T. (2015). Towards a plurilingual habitus: engendering interlinguality in urban spaces, International Journal of Pedagogies and Learning, 10(20), 151-165, DOI: 10.1080/22040552.2015.1113848
  
-London DataStore. (2011). Languages Spoken by Pupils, Borough & MSOA. https://data.london.gov.uk/dataset/languages-spoken-pupils-borough-msoa 
+2. London DataStore. (2011). Languages Spoken by Pupils, Borough & MSOA. https://data.london.gov.uk/dataset/languages-spoken-pupils-borough-msoa 
 
-The British Academy. (2012). Multilingual Britain. Retrieved 29 April 2020, from: https://www.thebritishacademy.ac.uk/sites/default/files/Multilingual%20Britain%20Report.pdf 
+3. The British Academy. (2012). Multilingual Britain. Retrieved 29 April 2020, from: https://www.thebritishacademy.ac.uk/sites/default/files/Multilingual%20Britain%20Report.pdf 
 
 
